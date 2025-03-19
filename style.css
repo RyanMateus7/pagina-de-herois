@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
+:root{
+    --cor_azul:#052542;
+    --cor_amarelo:#f1c232;
+    --cor_vermelho:#660000;
+    --cor_azul_claro:#1a639b;
+    --cor_verde:#6aa84f;
+
+    --fonte_titulo: "Bangers", system-ui;
+    --fonte_texto: "Comic Neue", cursive;
+    --fonte_personagens: "Alkatra", system-ui;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor_azul);
+    background-size: 100% 100%;
+}
+
+.cabecalho {
+    padding: 7% 10% 0% 10%;
+}
+
+.titulo {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_titulo);
+    font-size: 100px;
+    color: var(--cor_amarelo);
+}
+
+.subtitulo {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 26px;
+    color: var(--cor_verde);
+    padding: 5%;
+}
+
+.selecao__de__personagens {
+    margin: 0% 5% 10% 5%;
+}
+
+.paragrafo {
+    position: relative;
+}
+
+.paragrafo__texto {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: -12.5;
+    width: 700px;
+    height: 25px;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 20px;
+    color: var(--cor_verde);
+    border: 2px solid var(--cor_verde);
+    background-color: var(--cor_vermelho);
+}
+
+.personagens {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    gap: 70px;
+    list-style-type: none;
+}
+
+.personagem__imagem {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
+}
+
+.personagem__imagem:hover {
+    background-color: var(--cor_vermelho);
+}
+
+.personagem__nome {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--fonte_personagens);
+    font-size: 25px;
+    color: var(--cor_amarelo);
+}
+
+.cenas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px 0px 200px 0px;
+    gap: 50px;
+}
+
+.cenas__video {
+    width: 40%;
+    height: 40%;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
+}
+
+.rodape {
+    margin: 0px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rodape__texto {
+    font-family: var(--fonte_texto);
+    font-size: 25px;
+    color: var(--cor_azul_claro);
+}
