@@ -22,7 +22,6 @@
 body {
     box-sizing: border-box;
     background-color: var(--cor_azul);
-    background-size: 100% 100%;
 }
 
 .cabecalho {
@@ -134,4 +133,133 @@ body {
     font-family: var(--fonte_texto);
     font-size: 25px;
     color: var(--cor_azul_claro);
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 768px) {
+    .cabecalho {
+        margin: 10px;
+    }
+
+    .personagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .personagem__imagem {
+        height: 30vh;
+        width: 15vw;
+    }
+
+    .personagem__nome {
+        width: 15vw;
+    }
+}
+
+/* PAGÍNA DOIS */
+
+.pagina__dois {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 100px 0px 100px;
+}
+
+.pagina__dois__conteudo {
+    display: block;
+    padding: 0px;
+}
+
+.pagina__dois__titulo {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_titulo);
+    font-size: 70px;
+    color: var(--cor_amarelo);
+}
+
+.pagina__dois__subtitulo {
+    padding-bottom: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_personagens);
+    font-size: 30px;
+    color: var(--cor_amarelo);
+}
+
+.pagina__dois__paragrafo {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 25px;
+    color: var(--cor_verde);
+}
+
+.pagina__dois__personagem {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+
+.pagina__dois__imagem {
+    height: 150%;
+    width: 150%;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
+}
+
+.citacao {
+    margin: 50px;
+    border: 2px solid var(--cor_verde);
+    background-color: var(--cor_vermelho);
+}
+
+.citacao__texto {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 20px;
+    color: var(--cor_verde);
+}
+
+.galeria__titulo {
+    margin-left: 100px;
+    text-decoration: none;
+    font-family: var(--fonte_personagens);
+    font-size: 30px;
+    color: var(--cor_amarelo);    
+}
+
+.pagina__dois__galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    margin: 0px 100px 50px 100px;
+}
+
+.galeria__primeira__imagem {
+    height: 20%;
+    width: 20%;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
+}
+
+.galeria__segunda__imagem {
+    height: 20%;
+    width: 20%;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
+}
+
+.galeria__terceira__imagem {
+    height: 30%;
+    width: 30%;
+    border: 3px solid var(--cor_amarelo);
+    background-color: var(--cor_azul_claro);
 }
