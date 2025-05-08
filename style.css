@@ -223,7 +223,7 @@ body {
     text-align: center;
     text-decoration: none;
     font-family: var(--fonte_texto);
-    font-size: 20px;
+    font-size: 30px;
     color: var(--cor_verde);
 }
 
@@ -262,4 +262,20 @@ body {
     width: 30%;
     border: 3px solid var(--cor_amarelo);
     background-color: var(--cor_azul_claro);
+}
+
+.curiosidades__titulo {
+    margin-left: 900px;
+    text-decoration: none;
+    font-family: var(--fonte_personagens);
+    font-size: 30px;
+    color: var(--cor_amarelo);  
+}
+
+.curiosidades {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte_texto);
+    font-size: 25px;
+    color: var(--cor_verde);
 }
